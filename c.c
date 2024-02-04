@@ -41,7 +41,7 @@ int main(void)
         strcpy(filename,usr.mobile);
         fp = fopen(strcat(filename,".dat"),"w");
         fwrite(&usr,sizeof(struct user),1,fp);
-        if(fwprintf != 0)
+        if(fprintf != 0)
         {
             printf("\nYour account successfully registered!");
         }
